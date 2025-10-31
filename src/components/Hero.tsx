@@ -1,6 +1,5 @@
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -14,12 +13,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden"
-      style={{
-        backgroundImage: `linear-gradient(rgba(20, 27, 45, 0.9), rgba(20, 27, 45, 0.95)), url(${heroBg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background"
     >
       <div className="container mx-auto px-4 z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
