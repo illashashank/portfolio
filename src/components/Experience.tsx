@@ -4,7 +4,7 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 bg-secondary/30">
+    <section id="experience" className="min-h-screen flex items-center py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto space-y-12">
           <div className="text-center space-y-4">
@@ -20,11 +20,13 @@ const Experience = () => {
 
           <Card className="p-8 bg-card border-border shadow-lg relative overflow-hidden">
             <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-primary to-accent" />
-            
+
             <div className="space-y-6">
               <div className="flex flex-wrap items-start justify-between gap-4">
                 <div>
-                  <h3 className="text-2xl font-bold text-foreground">Automation Test Engineer</h3>
+                  <h3 className="text-2xl font-bold text-foreground">
+                    Automation Test Engineer
+                  </h3>
                   <p className="text-xl text-primary font-semibold">Vodex AI</p>
                 </div>
                 <Badge variant="outline" className="border-primary text-primary">
@@ -42,19 +44,27 @@ const Experience = () => {
                   <ul className="space-y-2 text-foreground/80">
                     <li className="flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
-                      <span>Implemented end-to-end automation scripts using Pytest and Selenium for web applications</span>
+                      <span>
+                        Implemented end-to-end automation scripts using Pytest and Selenium for web applications
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
-                      <span>Automated 40+ test cases, resulting in a 60% reduction in manual testing time</span>
+                      <span>
+                        Automated 40+ test cases, resulting in a 60% reduction in manual testing time
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
-                      <span>Developed structured automation frameworks and maintained reusable test components to improve test reliability</span>
+                      <span>
+                        Developed structured automation frameworks and maintained reusable test components to improve test reliability
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
-                      <span>Generated detailed test reports and logs for better execution insights and faster issue resolution</span>
+                      <span>
+                        Generated detailed test reports and logs for better execution insights and faster issue resolution
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -67,11 +77,15 @@ const Experience = () => {
                   <ul className="space-y-2 text-foreground/80">
                     <li className="flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
-                      <span>Performed API Testing using Postman, validating request/response accuracy, data consistency, and encryption-decryption mechanisms</span>
+                      <span>
+                        Performed API Testing using Postman, validating request/response accuracy, data consistency, and encryption-decryption mechanisms
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
-                      <span>Collaborated with cross-functional teams to validate integrations, troubleshoot issues, and ensure smooth production releases</span>
+                      <span>
+                        Collaborated with cross-functional teams to validate integrations, troubleshoot issues, and ensure smooth production releases
+                      </span>
                     </li>
                   </ul>
                 </div>

@@ -38,12 +38,6 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <Button
-              onClick={() => scrollToSection("#contact")}
-              className="bg-gradient-to-r from-primary to-accent hover:opacity-90"
-            >
-              Get in Touch
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}

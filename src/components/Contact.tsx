@@ -36,10 +36,20 @@ const Contact = () => {
     },
   ];
 
+  const attributes = [
+    "Effective Communication",
+    "Team Collaboration",
+    "Quick Learner",
+    "Adaptable",
+    "Quality-First Mindset",
+    "Continuous Improvement",
+  ];
+
   return (
-    <section id="contact" className="py-20 bg-background">
+    <section id="contact" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto space-y-12">
+          {/* Section Header */}
           <div className="text-center space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold">
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
@@ -47,10 +57,26 @@ const Contact = () => {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground">
-              Let's discuss how I can contribute to your team
+              How I can contribute to your team
             </p>
           </div>
 
+          {/* Personal Attributes */}
+          <div className="text-center space-y-4">
+            <h3 className="text-xl font-semibold text-foreground">Personal Attributes</h3>
+            <div className="flex flex-wrap justify-center gap-4">
+              {attributes.map((attribute, idx) => (
+                <div
+                  key={idx}
+                  className="px-4 py-2 bg-secondary rounded-full text-foreground/80"
+                >
+                  {attribute}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Contact Card */}
           <Card className="p-8 bg-card border-border shadow-lg">
             <div className="grid md:grid-cols-2 gap-6">
               {contactInfo.map((info, index) => (
@@ -79,6 +105,7 @@ const Contact = () => {
               ))}
             </div>
 
+            {/* Buttons */}
             <div className="mt-8 pt-8 border-t border-border">
               <div className="flex flex-wrap gap-4 justify-center">
                 <Button
@@ -103,27 +130,6 @@ const Contact = () => {
               </div>
             </div>
           </Card>
-
-          <div className="text-center space-y-4">
-            <h3 className="text-xl font-semibold text-foreground">Personal Attributes</h3>
-            <div className="flex flex-wrap justify-center gap-4">
-              {[
-                "Effective Communication",
-                "Team Collaboration",
-                "Quick Learner",
-                "Adaptable",
-                "Quality-First Mindset",
-                "Continuous Improvement",
-              ].map((attribute, idx) => (
-                <div
-                  key={idx}
-                  className="px-4 py-2 bg-secondary rounded-full text-foreground/80"
-                >
-                  {attribute}
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>

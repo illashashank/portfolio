@@ -46,7 +46,7 @@ const Hero = () => {
               className="border-primary/50 hover:border-primary hover:bg-primary/10"
               onClick={scrollToAbout}
             >
-              View My Work
+              About Me
               <ArrowDown className="ml-2 h-5 w-5" />
             </Button>
           </div>
