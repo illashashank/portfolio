@@ -22,7 +22,7 @@ const Resume = () => {
               <Phone className="w-4 h-4" />
               9492932679
             </a>
-            <a href="/" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <a href="https://illashashank.netlify.app" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Globe className="w-4 h-4" />
               Portfolio
             </a>
