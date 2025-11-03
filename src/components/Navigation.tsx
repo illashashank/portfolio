@@ -6,7 +6,7 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "Resume", href: "/resume", isRoute: true },
+    { label: "Resume", href: "#resume" },
     { label: "About", href: "#about" },
     { label: "Experience", href: "#experience" },
     { label: "Skills", href: "#skills" },
@@ -14,13 +14,9 @@ const Navigation = () => {
     { label: "Contact", href: "#contact" },
   ];
 
-  const handleNavClick = (href: string, isRoute?: boolean) => {
-    if (isRoute) {
-      window.location.href = href;
-    } else {
-      const element = document.querySelector(href);
-      element?.scrollIntoView({ behavior: "smooth" });
-    }
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    element?.scrollIntoView({ behavior: "smooth" });
     setIsOpen(false);
   };
 
@@ -37,7 +33,7 @@ const Navigation = () => {
             {navItems.map((item) => (
               <button
                 key={item.href}
-                onClick={() => handleNavClick(item.href, item.isRoute)}
+                onClick={() => scrollToSection(item.href)}
                 className="text-foreground/80 hover:text-primary transition-colors"
               >
                 {item.label}
@@ -60,14 +56,14 @@ const Navigation = () => {
             {navItems.map((item) => (
               <button
                 key={item.href}
-                onClick={() => handleNavClick(item.href, item.isRoute)}
+                onClick={() => scrollToSection(item.href)}
                 className="block w-full text-left text-foreground/80 hover:text-primary transition-colors py-2"
               >
                 {item.label}
               </button>
             ))}
             <Button
-              onClick={() => handleNavClick("#contact")}
+              onClick={() => scrollToSection("#contact")}
               className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90"
             >
               Get in Touch
