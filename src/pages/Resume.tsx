@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 
 const Resume = () => {
   return (
-    <section id="resume" className="py-20 bg-secondary/30">
+    <div className="min-h-screen bg-background pt-24 pb-16">
       <div className="container mx-auto px-4 max-w-4xl">
         {/* Header */}
         <div className="text-center mb-12">
@@ -155,7 +155,7 @@ const Resume = () => {
           </ul>
         </Card>
       </div>
-    </section>
+    </div>
   );
 };
 
