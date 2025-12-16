@@ -4,7 +4,7 @@ import { CheckCircle2 } from "lucide-react";
 const About = () => {
   const highlights = [
     "15 months of hands-on experience in automation and API testing",
-    "Automated 40+ test cases, reducing manual testing time by 60%",
+    "Automated 100+ test cases, reducing manual testing time by 60%",
     "Strong grasp of QA fundamentals, SDLC, and STLC",
     "Excellent communication and collaboration skills",
     "Quick learner with quality-first mindset",
