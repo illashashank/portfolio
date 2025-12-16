@@ -7,12 +7,12 @@ const Skills = () => {
     {
       icon: Code2,
       title: "Automation & Testing",
-      skills: ["Selenium", "Pytest", "POM Framework", "SDLC", "STLC", "Test Case Design"],
+      skills: ["Selenium", "Pytest","TestNG", "POM Framework","Maven", "SDLC", "STLC", "Test Case Design"],
     },
     {
       icon: Server,
       title: "API Testing",
-      skills: ["Postman", "REST APIs", "JSON", "Request/Response Validation"],
+      skills: ["Postman", "Swagger", "JSON", "Request/Response Validation"],
     },
     {
       icon: Wrench,
@@ -26,7 +26,7 @@ const Skills = () => {
     },
   ];
 
-  const programmingLanguages = ["Python", "JavaScript"];
+  const programmingLanguages = ["Python", "Core Java", "SQL"];
 
   return (
     <section id="skills" className="py-20 bg-secondary/30">

@@ -51,7 +51,7 @@ const Experience = () => {
                     <li className="flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
                       <span>
-                        Automated 40+ test cases, resulting in a 60% reduction in manual testing time
+                        Automated 100+ test cases, resulting in a 60% reduction in manual testing time
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
