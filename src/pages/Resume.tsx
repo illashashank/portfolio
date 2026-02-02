@@ -51,8 +51,8 @@ const Resume = () => {
               <div>
                 <h4 className="font-semibold mb-2 text-primary">Automation Testing</h4>
                 <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-                  <li>Designed and implemented automation scripts using Pytest and Selenium and Playwright with Page Object model for multiple web pages.</li>
-                  <li>Automated 40+ test cases, cutting manual testing time by 60%.</li>
+                  <li>Designed and implemented automation scripts using TestNG and Selenium and  with Page Object model for multiple web pages.</li>
+                  <li>Automated 120+ test cases, cutting manual testing time by 60%.</li>
                   <li>Built a scalable automation framework with reusable components to improve test stability.</li>
                   <li>Created clear execution logs and reports for faster debugging and issue tracking.</li>
                 </ul>
@@ -90,7 +90,7 @@ const Resume = () => {
               <Badge variant="secondary">Performance Testing</Badge>
               <Badge variant="secondary">Test Management</Badge>
               <Badge variant="secondary">Version Control</Badge>
-              <Badge variant="secondary">Python</Badge>
+              <Badge variant="secondary">Java</Badge>
             </div>
           </div>
 
@@ -98,8 +98,7 @@ const Resume = () => {
             <h3 className="font-semibold mb-3">Tools & Technologies</h3>
             <div className="flex flex-wrap gap-2">
               <Badge>Selenium</Badge>
-              <Badge>Pytest</Badge>
-              <Badge>Playwright</Badge>
+              <Badge>TestNG</Badge>
               <Badge>Postman</Badge>
               <Badge>Apache JMeter</Badge>
               <Badge>Git/GitHub</Badge>
