@@ -45,7 +45,7 @@ const Experience = () => {
                     <li className="flex items-start gap-2">
                       <span className="text-primary mt-1">•</span>
                       <span>
-                        Implemented end-to-end automation scripts using Pytest and Selenium for web applications
+                        Implemented end-to-end automation scripts using Java, TestNG and Selenium for web applications
                       </span>
                     </li>
                     <li className="flex items-start gap-2">
